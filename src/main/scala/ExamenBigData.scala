@@ -5,6 +5,8 @@ object ExamenBigData {
     val raissa = List("julien","paul", "jean","rac", "trec", "joel", "ed", "chris", "maurice")
 
     println(monexam(raissa))
+    liste_double()
+
 
   }
 
@@ -14,13 +16,20 @@ object ExamenBigData {
   }
 
   def liste_double(): Unit = {
+    val  Montableau = List(List("ecommercemag.fr"," "),List("https://www.journalducm.com/contact/","Payant"),
+      List("https://www.zatsaz.com/",""),List("https://www.lerevenu.com/",""),
+      List("https://www.cadre-dirigfdeant-magazine.com/","payant"),
+      List("https://www.silicon.fr/services/contact#annoncer","Payant"),
+      List("https://www.channelbiz.fr/nous-contacter/",""),
+      List("https://www.itespresso.fr/",""),
+      List("https://www.industrie-mag.com/article4.html","invite"),
+      List("https://www.jesuisundev.com/article-invite/","invite"),
+      List("https://www.numerama.com/",""))
+    Montableau.foreach(t=>{println(t(0)+" "+t(1))})
 
   }
 
-  val montableau : Array[String][String] = Array("ecommercemag.fr","joel")
-  montableau(0) = "bety"
 
-  def main(args: Array[String]) {
-    var myMatrix = ofDim[Int](3,3)
+
 
 }
